@@ -55,7 +55,7 @@
       "CPUs":             2,
       "RAM":              1024,
       "RAM_reserve_all": false,
-      "guest_os_type": "ubuntu64Guest",
+      "guest_os_type": "debian10_64Guest",
       "disk_controller_type": ["pvscsi"],
       "storage": [
         {
