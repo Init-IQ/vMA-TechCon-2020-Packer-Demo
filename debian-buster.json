@@ -71,7 +71,7 @@
       "datastore"         : "XIO_BackupTest_Exchange",
       "network_adapters": [
         {
-          "network": "vancis-cs-install-1955[A,B]",
+          "network": "General/vancis-cs-install-1955[A,B]",
           "network_card": "vmxnet3"
         }
       ],
