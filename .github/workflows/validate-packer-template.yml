@@ -42,4 +42,5 @@ jobs:
           -var vsphere_hostname="${{ secrets.VSPHERE_HOSTNAME }}" 
           -var vsphere_username="${{ secrets.VSPHERE_USERNAME }}" 
           -var vsphere_password="${{ secrets.VSPHERE_PASSWORD }}" 
+          -var vsphere_targethost="${{ secrets.VSPHERE_TARGETHOST }}" 
           /github/workspace/${{ matrix.template }}

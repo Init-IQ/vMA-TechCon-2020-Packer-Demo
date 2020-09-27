@@ -47,8 +47,11 @@
       "username":            "{{user `vsphere_username`}}",
       "password":            "{{user `vsphere_password`}}",
       "insecure_connection": "true",
-      "iso_url": "{{user `template_sourcedir`}}/debian-10.4.0-amd64-netinst.iso",
-      "iso_checksum" : "sha1:4cb66b8ffcd8d067d97d936ee35721ef5596635a",
+      "iso_url": "http://mirror.nl.leaseweb.net/debian-cd/current/amd64/iso-cd/debian-10.6.0-amd64-netinst.iso",
+      "iso_checksum" : "sha1:a93827ab9971c99e6c077ebaa86daf50aed36777",
+      "datacenter"        : "Speeltuin",
+      "cluster"           : "Speeltuin",
+      "resource_pool"     : "VOC",
       "CPUs":             2,
       "RAM":              1024,
       "RAM_reserve_all": false,
@@ -64,11 +67,11 @@
       "ssh_username": "{{user `os_username`}}",
       "ssh_password": "{{user `os_password`}}",
       "notes": "Test van Rudolf om software-defined nieuwe VM templates te maken. Kan dus prima weggegooid worden.",
-      "host": "localhost.localdomain",
-      "datastore": "datastore1",
+      "host"              : "{{user `vsphere_targethost`}}",
+      "datastore"         : "XIO_BackupTest_Exchange",
       "network_adapters": [
         {
-          "network": "VM Network",
+          "network": "vancis-cs-install-1955[A,B]",
           "network_card": "vmxnet3"
         }
       ],

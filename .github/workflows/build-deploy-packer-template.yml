@@ -33,5 +33,6 @@ jobs:
         -var os_password="${{ secrets.OS_PASSWORD }}" 
         -var vsphere_hostname="${{ secrets.VSPHERE_HOSTNAME }}" 
         -var vsphere_username="${{ secrets.VSPHERE_USERNAME }}" 
-        -var vsphere_password="${{ secrets.VSPHERE_PASSWORD }}" 
+        -var vsphere_password="${{ secrets.VSPHERE_PASSWORD }}"
+        -var vsphere_targethost="${{ secrets.VSPHERE_TARGETHOST }}" 
         $GITHUB_WORKSPACE/${{ matrix.template }}
